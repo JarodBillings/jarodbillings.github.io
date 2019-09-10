@@ -1,0 +1,131 @@
+
+/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+body {
+  color: #444;
+  font-size: 16px;
+  font-family: 'Gentium Book Basic', sans-serif;
+}
+p {
+  margin-bottom: .67em;
+}
+nav {
+  background-color: #084C61;
+}
+nav, footer {
+  background-color: #084C61;
+
+}
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #D0D0D0;
+}
+/*-- Main Menu Styles--*/
+.li-arrow-back, .li-arrow-fwd{
+  font-size: 25px;
+}
+
+.li-arrow-back a:hover, .li-arrow-back a:hover{
+  color: #DB3A34;
+}
+
+.li-arrow-fwd a:hover, .li-arrow-fwd a:active{
+  color: #679436;
+}
+nav ul {
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  text-align: center; 
+  justify-content: space-evenly;
+  font-weight: bold;
+  align-items: center;
+}
+nav a:link, nav a:visited {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  text-decoration: none;
+}
+nav a.active {
+  color: #F0F0F0;
+}
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.small {
+  margin-top: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #7e7e7e;
+  text-transform: uppercase;
+}
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+  margin:auto;
+}
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right;
+}
+article figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #404040;
+}
+
+.pagination {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+  display: flex;
+  justify-content: space-evenly;
+}
+a.button {
+  border: 1px solid #888;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color:#1a1a1a;
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 1px solid #444;
+  text-decoration: none;
+  background-color: #006994;
+}
+
+.article-img{
+  height: 90%;
+  width: 90%;
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
+
